@@ -413,6 +413,20 @@
         background-size:cover;
         background-position: 0%;
         margin-bottom: 5px;}
+
+        .encabezadopink{
+            display:flex;
+            justify-content: center;
+            align-items: flex-start ;
+            height: 100px;
+            width: 100%;
+            font-family: inter;
+            /*border: 2px solid black;*/
+            background-image: url(img/wavep.svg) ;
+            background-size:cover;
+            background-position: 0%;
+            margin-bottom: 30px;
+        }    
             
     nav ul li{
         list-style-type: none;
