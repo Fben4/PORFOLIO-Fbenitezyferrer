@@ -182,6 +182,7 @@
         display: flex;
         justify-content:center;
         align-items: center;
+        margin-bottom: 50px;
     }
     
     .descripcion{
@@ -331,6 +332,39 @@
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         margin: 10px;
+    }
+    .contacthome{
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .donut{
+        height: 350px;
+        width: 350px;
+    }
+
+    .botondonut{
+        height: 70px;
+        width:300px;
+        background-color: #e7008a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        font-family: inter;
+        color: white;
+        text-decoration: none;
+    }
+
+    .centrarboton{
+        height: 80px;
+        display:flex ;
+        justify-content: center;
+        padding-top: 40px;
     }
 }
 
@@ -868,13 +902,15 @@
         }
         
         .abtme{
-            height: 500px;
+            height: auto;
             background-image: url(img/cielo.jpg);
             background-position: 0;
             background-size:cover;
             display: flex;
             justify-content:center;
             align-items: center;
+            padding: 20px;
+            margin-bottom: 40px;
         }
         
         .descripcion{
@@ -1030,6 +1066,39 @@
             border-radius: 20px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             margin: 10px;
+        }
+
+        .contacthome{
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .donut{
+            height: 300px;
+            width: 100%;
+        }
+
+        .botondonut{
+            height: 60px;
+            width:160px;
+            background-color: #e7008a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 27px;
+            font-family: inter;
+            color: white;
+            text-decoration: none;
+        }
+
+        .centrarboton{
+            height: 80px;
+            display:flex ;
+            justify-content: center;
+            padding-top: 40px;
         }
     }
     
