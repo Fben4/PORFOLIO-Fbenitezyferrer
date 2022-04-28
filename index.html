@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,13 +26,13 @@
     </nav>
     </header>
 
-    <div class="logo"><img class="simpson" src="img/simpson.png" alt="perfil"></div>
-    <h1>Franco Benitez y Ferrer</h1>
+    <div class="logo"><img class="simpson" data-aos="zoom-in" src="img/simpson.png" alt="perfil"></div>
+    <h1 data-aos="fade-down">Franco Benitez y Ferrer</h1>
 
-    <h3>Skillset</h3>
+    <h3 data-aos="fade-left">Skillset</h3>
     
-    <section class="skills">
-        <div> <img class="logotipo" src="./img/PR.png" alt=""></div>
+    <section class="skills" data-aos="fade-down">
+        <div> <img class="logotipo"  src="./img/PR.png" alt=""></div>
         <div> <img class="logotipo" src="./img/AI.png" alt=""></div>
         <div> <img class="logotipo" src="./img/LR.png" alt=""></div>
         <div> <img class="logotipo" src="./img/PS.png" alt=""></div>
@@ -41,8 +43,8 @@
     </section>
 
     <section>
-        <h4>projects</h4>
-        <div class="box">
+        <h4 data-aos="fade-left">projects</h4>
+        <div class="box" data-aos="fade-down">
             <div class="button button--visual">videos</div>
             <div class="button button--visual">images</div>
             <div class="button button--visual">logos</div>
@@ -50,9 +52,9 @@
         </div>
     </section>
     <section id="abtme"> 
-        <h5>About me</h5>
+        <h5 data-aos="fade-left">About me</h5>
         <div class="abtme">
-            <img class="simp" src="img/simpson2.png" alt="">
+            <img class="simp" data-aos="zoom-in" src="img/simpson2.png" alt="">
             <div class="descripcion">
                 I am Franco Benitez y Ferrer, I am an appasionate person who loves learning and collaborating in projects.
                 I love innovating in my projects and I really work hard to leave mark on my collaborations.
@@ -65,7 +67,7 @@
     
 
     <section>
-        <h5 class="desktop">Wanna colaborate?</h2>
+        <h5 class="desktop" data-aos="fade-down">Wanna colaborate?</h2>
         <div class="contacthome">
             
             <div><img class="donut" src="./img/donutt.png" alt="rosquilla"></div>
@@ -97,7 +99,9 @@
         
     </footer>
             
-
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
