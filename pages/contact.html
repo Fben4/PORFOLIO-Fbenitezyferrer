@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Form</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="contact">
+    <header class="encabezadopink">   
+        <nav class="encabezado_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <section>
+            <h3>Formulario de contacto</h3>
+            <div class="form">
+                <form action="enviar.php" method="post" enctype="text/plain">
+                    <div class="blockform">
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Will Smith" id="username" required><br>
+                    </div>
+                    <div class="blockform">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="willsmith12@gmail.com" required><br>
+                        
+                    </div>
+                    <div class="blockform">
+                        <label for="">Interesado en</label> 
+                        <select name="trabajos" id="trabajos">
+                            <option value="Logo">Logo</option>
+                            <option value="Publicaciones">Publicaciones</option>
+                            <option value="Edición de video">Edición de video"</option>
+                            <option value="Edición de fotografía">Edición de fotografía</option>
+                        </select>
+                    </div>
+                    <div class="blockform">
+                        <label for="">Número de telefono</label>
+                        <input type="number" name="" id="" placeholder="098765432"required><br>
+                    </div>
+                    <div class="coments">
+                        <textarea  name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="boton" role="button">send</button>      
+                    
+            </div>
+            
+            <footer>
+                <div class="redes">
+                    <ul>
+                        <li>
+                            <img class="icons" src="../img/github.png" alt="">
+                        </li>
+                        <li>
+                            <img class="icons" src="../img/facebook-2.png" alt="">
+                        </li>
+                        <li>
+                            <img class="icons" src="../img/linkedin.png" alt="">
+                        </li>
+                        <li>
+                            <img class="icons" src="../img/instagram-3.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                
+                
+            </footer>
+</body>
+</html>
+
