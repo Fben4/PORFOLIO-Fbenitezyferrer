@@ -662,6 +662,40 @@
 
         }        
 
+        .contacthome{
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .donut{
+            height: 300px;
+            width: 100%;
+        }
+
+        .botondonut{
+            height: 60px;
+            width:160px;
+            background-color: #e7008a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 27px;
+            font-family: inter;
+            color: white;
+            text-decoration: none;
+        }
+
+        .centrarboton{
+            height: 80px;
+            display:flex ;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+
     }
 
 /*tablet*/
@@ -999,3 +1033,5 @@
         }
     }
     
+
+
