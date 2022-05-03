@@ -6,16 +6,74 @@
 .bg-primary{
     background-color: #0175F5 !important
 }
+
+@font-face {
+    font-family: simpson;
+    src: url(./simpson.otf);
+}
+
 /* desktop */
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
     display: flex;
     justify-content: center;
-
 }
 .bg-pink{
     background-color:#e7008a;
+
 }
+
+.abtme{
+        height: auto;
+        background-image: url(img/cielo.jpg);
+        background-position: 0;
+        background-size:cover;
+        display: flex;
+        background-color: #67c3eb;
+        justify-content:center;
+        align-items: center;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+
+    .nleft{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .descripcion{
+        font-size: 24px;
+        width: 600px;
+        font-family: Inter;
+    }
+    
+    .simp{
+        height:300px ;
+        width: 300px;
+        margin: 20px;
+        padding-bottom: 15px;
+    }
+
+
+
+    .carousel-inner{
+        height: 200px;
+        width: 200px;
+
+    }
+
+    .carousel-item img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .carousel{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
 
 @media screen and (min-device-width: 1200px){
     
@@ -98,7 +156,6 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         
         
-    
     }
     
     .logotipo{
@@ -156,29 +213,7 @@
         margin-bottom: 40px;
     }
     
-    .abtme{
-        height: 500px;
-        background-image: url(img/cielo.jpg);
-        background-position: 0;
-        background-size:cover;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-    
-    .descripcion{
-        font-size: 24px;
-        width: 600px;
-        font-family: Inter;
-    }
-    
-    .simp{
-        height:300px ;
-        width: 300px;
-        margin: 20px;
-        padding-bottom: 15px;
-    
+
     }
     
     .form{
@@ -366,7 +401,7 @@
         justify-content: center;
         padding-top: 40px;
     }
-}
+
 
 
 @font-face {
@@ -410,22 +445,7 @@
             margin-bottom: 30px;
         }    
             
-    nav ul li{
-        list-style-type: none;
-        display: inline-block;
-        padding: 15px;
-        font-size: 10px;
-    }
-        
-    nav ul li a{
-        text-decoration: none;
-        color: white;
-    }
-        
-    nav ul li a:hover{
-        color: rgb(237, 206, 29);
-    }
-        
+
     .logo{
         
         height: 200px;
@@ -1120,6 +1140,8 @@
     height: auto;
     display:flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 .publicacion{
     height: 280px;
