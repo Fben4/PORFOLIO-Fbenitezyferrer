@@ -249,15 +249,13 @@
     
         }
     
-    .contact{
+    .contact--background{
         background-color: rgb(255, 234, 196);
-    }
-    
-    .cielo{
-        background-image: url(img/cielo.jpg);
-    
+
     }
 
+
+    
     .contacthome{
         height: 350px;
         width: 100%;
@@ -857,6 +855,11 @@
     justify-content: center;
 }
 
+.send:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
 .videos{
     height: auto;
     display:flex;
@@ -878,8 +881,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s;
     
-
 }
 
 .video:hover{
@@ -893,4 +896,3 @@
     justify-content: center;
     padding-top: 40px;
 }
-
