@@ -873,8 +873,7 @@
     height: 500px;
     width: 300px;
     padding: 10px;
-    margin-left: 20px;
-    margin-bottom: 50px;
+    margin: 15px;
     border-radius: 20px;
     background-color:#67c3eb;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
