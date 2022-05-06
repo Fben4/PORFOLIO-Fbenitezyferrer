@@ -32,38 +32,77 @@
         
         </header>
 
-        <section>
-            <h3>Formulario de contacto</h3>
-            <div class="form">
-                <form action="enviar.php" method="post" enctype="text/plain">
-                    <div class="blockform">
-                        <label for="">Nombre</label>
-                        <input type="text" placeholder="Will Smith" id="username" required><br>
-                    </div>
-                    <div class="blockform">
-                        <label for="">Email</label>
-                        <input type="email" placeholder="willsmith12@gmail.com" required><br>
-                        
-                    </div>
-                    <div class="blockform">
-                        <label for="">Interesado en</label> 
-                        <select name="trabajos" id="trabajos">
-                            <option value="Logo">Logo</option>
-                            <option value="Publicaciones">Publicaciones</option>
-                            <option value="Edición de video">Edición de video"</option>
-                            <option value="Edición de fotografía">Edición de fotografía</option>
-                        </select>
-                    </div>
-                    <div class="blockform">
-                        <label for="">Número de telefono</label>
-                        <input type="number" name="" id="" placeholder="098765432"required><br>
-                    </div>
-                    <div class="coments">
-                        <textarea  name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-                    </div>
-                    <button class="boton" role="button">send</button>      
-                    
+<section>
+    <!-- Start of Form -->
+<form class="form">
+    <!-- name -->
+    <div class="container-fluid formulario row">
+        <div class="form-group ">
+            <div class="col-xs-10 col-lg-10 col-md-10 bloque">
+                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter your name">
             </div>
+            
+        </div>
+        <!-- Lastname -->
+        <div class="form-group">
+            <div class="col-xs-10 col-lg-5 col-md-8 bloque">
+                <input type="text" class="form-control" id="Lastname" aria-describedby="name" placeholder="Enter your Lastname">
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <div class="col-xs-10 col-lg-5 col-md-8 bloque">
+                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter your Email">
+            </div>
+            
+        </div>
+
+        <!--filetype-->
+
+        <div class="form-group">
+            <div class="col-xs-10 col-lg-5 col-md-8 bloque">
+            
+                <select class="form-control" id="singleselect">
+                
+                    <option>Elige el formato</option>
+                
+                    <option>Logo</option>
+                
+                    <option>Publicaciones</option>
+                
+                    <option>Videos</option>
+                
+                    <option>Sitio Web</option>
+    
+            </select>
+
+            </div>
+            
+    
+        </div>
+
+        <!--Details-->
+
+        <div class="form-group">
+            <div class="col-xs-10 col-lg-5 col-md-8 bloque">
+                <textarea class="form-control" id="textarea" rows="5" placeholder="Cuentanos mas sobre tu fantastica idea"></textarea>
+            </div>
+        </div>
+                
+        <!-- 9. Submit Button -->
+    
+                
+        <div class="col-xs-10 col-lg-5 col-md-8 send">     
+            <button type="submit" class="btn btn-success">Let's do it</button>
+
+        </div>
+</form>
+
+    </div>
+
+    
+    
+</section>
             
             <footer>
                 <div class="redes">
