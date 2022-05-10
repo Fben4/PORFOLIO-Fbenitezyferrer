@@ -258,13 +258,21 @@ $dark-brown:rgb(193, 132, 57);
         width: 30px;
     }
     
-    .redes ul li{
+    .redes { 
+            
+        li {
         height: 50px;
         list-style: none;
         display: inline-block;
         padding: 5px;
-    
         }
+
+        li:hover {
+            transform: scale(1.04);
+            transition: all 0.3s;          
+        }
+    
+    }
     
     .contact--background{
         background-color: $donutbrown;
@@ -512,13 +520,22 @@ $dark-brown:rgb(193, 132, 57);
             width: 30px;
         }
         
-        .redes ul li{
+        .redes { 
+            
+            li {
             height: 50px;
             list-style: none;
             display: inline-block;
             padding: 5px;
-        
             }
+
+            li:hover {
+                transform: scale(1.04);
+                transition: all 0.3s;          
+            }
+        
+        }
+
         
 
         .descripcion{
@@ -739,14 +756,21 @@ $dark-brown:rgb(193, 132, 57);
             width: 30px;
         }
         
-        .redes ul li{
+        .redes { 
+            
+            li {
             height: 50px;
             list-style: none;
             display: inline-block;
             padding: 5px;
-        
+            }
+
+            li:hover {
+                transform: scale(1.04);
+                transition: all 0.3s;          
             }
         
+        }
     
             
         .cielo{
@@ -849,7 +873,7 @@ $dark-brown:rgb(193, 132, 57);
 
 .btn-success {
     color: #fff;
-    background-color: $donutbrown;
+    background-color: $donutpink;
     border-color: $donutpink;
 }
 

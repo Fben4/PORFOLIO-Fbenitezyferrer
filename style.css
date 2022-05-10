@@ -279,11 +279,18 @@ footer {
   width: 30px;
 }
 
-.redes ul li {
+.redes li {
   height: 50px;
   list-style: none;
   display: inline-block;
   padding: 5px;
+}
+
+.redes li:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .contact--background {
@@ -564,11 +571,17 @@ footer {
     height: 30px;
     width: 30px;
   }
-  .redes ul li {
+  .redes li {
     height: 50px;
     list-style: none;
     display: inline-block;
     padding: 5px;
+  }
+  .redes li:hover {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   .descripcion {
     font-size: 20px;
@@ -813,11 +826,18 @@ footer {
   width: 30px;
 }
 
-.redes ul li {
+.redes li {
   height: 50px;
   list-style: none;
   display: inline-block;
   padding: 5px;
+}
+
+.redes li:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .cielo {
@@ -959,7 +979,7 @@ footer {
 
 .btn-success {
   color: #fff;
-  background-color: #ffeac4;
+  background-color: #e7008a;
   border-color: #e7008a;
 }
 
