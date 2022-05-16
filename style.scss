@@ -11,11 +11,12 @@
 }
 
 /* font-sizes */
-
-$lg-font: 60px;
-$md-font: 40px;
-$sm-font: 30px;
-$xs-font: 20px;
+$font-sizes: (
+    "lg": 60px,
+    "md": 40px,
+    "sm": 30px,
+    "xs": 20px
+);
 
 /* color-palette */
 
@@ -26,6 +27,11 @@ $light-pink:#FCE8FF;
 $donutbrown:rgb(255, 234, 196);
 $dark-brown:rgb(193, 132, 57);
 
+@mixin flex-center{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
 
 .bg-primary{
     background-color: $milhouse-blue !important
@@ -47,10 +53,8 @@ $dark-brown:rgb(193, 132, 57);
         background-image: url(img/cielo.jpg);
         background-position: 0;
         background-size:cover;
-        display: flex;
+        @include flex-center;
         background-color: skyblue;
-        justify-content:center;
-        align-items: center;
         padding: 50px;
         margin-bottom: 50px;
     }
@@ -61,7 +65,7 @@ $dark-brown:rgb(193, 132, 57);
     }
     
     .descripcion{
-        font-size: $sm-font;
+        font-size: map-get($font-sizes , xs );
         font-family: Inter;
     }
     
@@ -117,9 +121,7 @@ $dark-brown:rgb(193, 132, 57);
     
         height: 200px;
         width: 100%;
-        display:flex;
-        align-items:center;
-        justify-content: center;
+        @include flex-center;
         margin-bottom: 30px;
         /*border: 2px solid black;*/
         
@@ -141,7 +143,7 @@ $dark-brown:rgb(193, 132, 57);
     }
     
     h2{
-        font-size: $md-font;
+        font-size: map-get($font-sizes , md);
         font-family: simpson;
         text-align: center;
         padding-bottom: 40px;
@@ -151,7 +153,7 @@ $dark-brown:rgb(193, 132, 57);
     
     
     h3{
-        font-size: $md-font;
+        font-size: map-get($font-sizes , md );
         font-family: simpson;
         text-align: center;
         padding-bottom: 40px;
@@ -161,11 +163,9 @@ $dark-brown:rgb(193, 132, 57);
     .skills{
         height: auto;
         width: auto;
-        display: flex;
+        @include flex-center;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         border-radius: 20px;
         padding-bottom:10px ;
         padding-top:10px ;
@@ -197,16 +197,14 @@ $dark-brown:rgb(193, 132, 57);
     
     h4{
         font-family: simpson;
-        font-size: $md-font;
+        font-size: map-get($font-sizes , md);
         text-align: center;
         padding-top: 40px;
         padding-bottom: 40px;
     }
     
     .button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         height: 70px;
         width: 275px;
         padding: 10px;
@@ -222,7 +220,7 @@ $dark-brown:rgb(193, 132, 57);
     }
     
     h5{
-        font-size: $md-font;
+        font-size: map-get($font-sizes , md );
         font-family: simpson;
         text-align: center;
         margin-bottom: 40px;
@@ -233,9 +231,7 @@ $dark-brown:rgb(193, 132, 57);
     
     .form{
         height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         font-family: inter;
         color: white;
     }
@@ -305,9 +301,7 @@ $dark-brown:rgb(193, 132, 57);
         height: 70px;
         width:300px;
         background-color: #e7008a;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         border-radius: 40px;
         font-family: inter;
         color: white;
@@ -368,9 +362,7 @@ $dark-brown:rgb(193, 132, 57);
         
         height: 200px;
         width: 100%;
-        display:flex;
-        align-items:center;
-        justify-content: center;
+        @include flex-center;
         margin-bottom: 10px;
             
         }
@@ -386,20 +378,20 @@ $dark-brown:rgb(193, 132, 57);
         font-family: simpson;
         text-align: center ;
         word-spacing: 5px;
-        font-size: $sm-font;
+        font-size: map-get($font-sizes , sm );
         padding-bottom: 50px;
 
     }
 
     h3{
-        font-size: $sm-font;
+        font-size: map-get($font-sizes , sm );
         font-family: simpson;
         text-align: center;
         padding-bottom: 10px;
         }
         
     h2{
-            font-size: $xs-font;
+            font-size: map-get($font-sizes , xs );
             font-family: simpson;
             text-align: center;
             padding-top: 20px;
@@ -411,11 +403,9 @@ $dark-brown:rgb(193, 132, 57);
     .skills{
         height: auto;
         width: 90%;
-        display: flex;
+        @include flex-center;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         border-radius: 20px;
         margin: 0 auto;
         background-color:$light-pink ;
@@ -444,16 +434,14 @@ $dark-brown:rgb(193, 132, 57);
         
         h4{
             font-family: simpson;
-            font-size: $sm-font;
+            font-size: map-get($font-sizes , sm );
             text-align: center;
             padding-top: 40px;
             padding-bottom: 40px;
         }
         
         .button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             height: 50px;
             width: 200px;
             padding: 10px;
@@ -470,7 +458,7 @@ $dark-brown:rgb(193, 132, 57);
         }
         
         h5{
-            font-size: $sm-font;
+            font-size: map-get($font-sizes , sm );
             font-family: simpson;
             text-align: center;
             margin-bottom: 40px;
@@ -488,9 +476,7 @@ $dark-brown:rgb(193, 132, 57);
         
         .form{
             height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             font-family: inter;
             color: white;
 
@@ -542,16 +528,14 @@ $dark-brown:rgb(193, 132, 57);
         
 
         .descripcion{
-            font-size: $xs-font;
+            font-size: map-get($font-sizes , sm );
             font-family: Inter;
         }
 
         .contacthome{
             height: 300px;
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
         }
 
         .donut{
@@ -563,9 +547,7 @@ $dark-brown:rgb(193, 132, 57);
             height: 60px;
             width:160px;
             background-color: $donutpink;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             border-radius: 27px;
             font-family: inter;
             color: white;
@@ -614,9 +596,7 @@ $dark-brown:rgb(193, 132, 57);
         
             height: 200px;
             width: 100%;
-            display:flex;
-            align-items:center;
-            justify-content: center;
+            @include flex-center;
             margin-bottom: 30px;
             /*border: 2px solid black;*/
             
@@ -635,11 +615,11 @@ $dark-brown:rgb(193, 132, 57);
             padding-top: 10px;
             padding-bottom: 100px;
             word-spacing: 10px;
-            font-size: $md-font;
+            font-size: map-get($font-sizes , md );
         }
         
         h2{
-            font-size: $sm-font;
+            font-size: map-get($font-sizes , md );
             font-family: simpson;
             text-align: center;
             padding-bottom: 40px;
@@ -649,7 +629,7 @@ $dark-brown:rgb(193, 132, 57);
         
         
         h3{
-            font-size: $md-font;
+            font-size: map-get($font-sizes , md );
             font-family: simpson;
             text-align: center;
             padding-bottom: 0px;
@@ -659,11 +639,9 @@ $dark-brown:rgb(193, 132, 57);
         .skills{
             height: auto;
             width: auto;
-            display: flex;
+            @include flex-center;
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
             border-radius: 20px;
             padding-bottom:10px ;
             padding-top:10px ;
@@ -695,16 +673,14 @@ $dark-brown:rgb(193, 132, 57);
         
         h4{
             font-family: simpson;
-            font-size: $md-font;
+            font-size: map-get($font-sizes , md );
             text-align: center;
             padding-top: 40px;
             padding-bottom: 40px;
         }
         
         .button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             height: 70px;
             width: 275px;
             padding: 10px;
@@ -724,7 +700,7 @@ $dark-brown:rgb(193, 132, 57);
         }
         
         h5{
-            font-size: $md-font;
+            font-size: map-get($font-sizes , md );
             font-family: simpson;
             text-align: center;
             margin-bottom: 40px;
@@ -785,9 +761,7 @@ $dark-brown:rgb(193, 132, 57);
         .contacthome{
             height: 300px;
             width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
         }
 
         .donut{
@@ -799,9 +773,7 @@ $dark-brown:rgb(193, 132, 57);
             height: 60px;
             width:160px;
             background-color: $donutpink;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             border-radius: 27px;
             font-family: inter;
             color: white;
@@ -822,9 +794,7 @@ $dark-brown:rgb(193, 132, 57);
     background-color: $skyblue;
     border-radius: 15px;
     margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     transition: all 0.5s;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -846,9 +816,7 @@ $dark-brown:rgb(193, 132, 57);
 .formulario{
     height: 600px;
     width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
 }
 .bloque{
@@ -863,9 +831,7 @@ $dark-brown:rgb(193, 132, 57);
 
 .form{
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     font-family: inter;
     color: white;
 }
@@ -922,9 +888,7 @@ $dark-brown:rgb(193, 132, 57);
     border-radius: 20px;
     background-color:$skyblue;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     transition: all .5s;
     
 }
