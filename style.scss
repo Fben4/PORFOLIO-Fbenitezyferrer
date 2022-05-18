@@ -280,9 +280,7 @@ $dark-brown:rgb(193, 132, 57);
     .contacthome{
         height: 350px;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
     }
 
 
@@ -451,7 +449,7 @@ $dark-brown:rgb(193, 132, 57);
         }
         
         .button--visual{
-            background-color: #0175F5;
+            background-color: $milhouse-blue;
             color: white;
             font-family: inter;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
