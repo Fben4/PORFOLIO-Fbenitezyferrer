@@ -131,6 +131,8 @@
   .simpson {
     height: 250px;
     width: 250px;
+    -webkit-transition-delay: 1ms;
+            transition-delay: 1ms;
     /*border: 2px solid blue;*/
   }
   h1 {
@@ -329,8 +331,8 @@ footer {
 .donut {
   height: 350px;
   width: 350px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .donut:hover {
@@ -738,7 +740,7 @@ footer {
   }
   .skills {
     height: auto;
-    width: auto;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1115,5 +1117,100 @@ footer {
 .donut {
   height: 300px;
   width: 300px;
+}
+
+.d-block {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.carrousell {
+  margin-bottom: 20px;
+}
+
+.collabs {
+  height: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0 100px;
+  background-color: #FCE8FF;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: auto;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 150px;
+  width: 130px;
+  margin: 10px;
+}
+
+.icon {
+  border-radius: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px;
+  padding: 3px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 3px solid white;
+  background: linear-gradient(36deg, #ffc900 13%, #ff005f 73%, #ff09ed 100%);
+}
+
+.icon:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: inter;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.user {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
